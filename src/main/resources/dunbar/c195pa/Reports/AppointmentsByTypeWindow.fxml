@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dunbar.c195pa.Controller.AppointmentsByTypeWindowController">
+   <children>
+      <Label layoutX="30.0" layoutY="14.0" text="Appointments By Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="appointmentTable" layoutX="26.0" layoutY="56.0" prefHeight="288.0" prefWidth="337.0">
+        <columns>
+          <TableColumn fx:id="monthCol" prefWidth="85.59996795654297" text="Month" />
+          <TableColumn fx:id="typeCol" prefWidth="161.59996795654297" text="Type" />
+            <TableColumn fx:id="numAppCol" prefWidth="89.5999755859375" text="Count" />
+        </columns>
+      </TableView>
+      <Button fx:id="closeButton" layoutX="312.0" layoutY="361.0" mnemonicParsing="false" onAction="#closeWindow" text="Close" />
+   </children>
+</AnchorPane>
